@@ -1,19 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:jokenpo/jogo.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    home: Jogo(),
+    title: "J O K E N P O",
+  ));
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
